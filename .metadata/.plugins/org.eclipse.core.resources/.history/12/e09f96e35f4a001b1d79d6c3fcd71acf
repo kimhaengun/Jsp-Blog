@@ -1,0 +1,5 @@
+package com.cos.reflect;
+
+public @interface RequestMapping {
+
+}

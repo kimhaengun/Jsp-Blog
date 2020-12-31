@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3143325655.index
+\blog\src
+C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3744385260.index
+\reflect\src
