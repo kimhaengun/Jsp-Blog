@@ -1,7 +1,6 @@
 package com.cos.blog.domain.board;
 
-
-import java.sql.Timestamp;
+import java.security.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
