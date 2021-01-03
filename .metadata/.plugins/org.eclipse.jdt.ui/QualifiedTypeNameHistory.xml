@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.servlet.Filter"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="controller.UserController"/>
     <fullyQualifiedTypeName name="com.cos.reflect.controller.UserController"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
@@ -19,8 +16,28 @@
     <fullyQualifiedTypeName name="java.util.Enumeration"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.ApacheNodeSetData"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.cos.reflect.controller.dto.JoinDto"/>
     <fullyQualifiedTypeName name="com.cos.reflect.controller.dto.LoginDto"/>
+    <fullyQualifiedTypeName name="com.cos.blog.controller.dto.JoinReqDto"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Builder"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.user.User"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.user.dto.UpdateReqDto"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="javax.naming.Context"/>
+    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.cos.blog.config.DB"/>
+    <fullyQualifiedTypeName name="javax.servlet.Filter"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.cos.blog.service.UserService"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.user.dto.LoginReqDto"/>
+    <fullyQualifiedTypeName name="com.cos.blog.domain.user.dto.JoinReqDto"/>
 </qualifiedTypeNameHistroy>

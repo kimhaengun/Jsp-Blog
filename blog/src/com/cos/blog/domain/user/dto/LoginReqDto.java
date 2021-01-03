@@ -6,4 +6,6 @@ import lombok.Data;
 public class LoginReqDto { //로그인 dto
 	private String username;
 	private String password;
+
+	
 }
