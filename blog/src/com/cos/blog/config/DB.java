@@ -2,11 +2,14 @@ package com.cos.blog.config;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
+
+import com.mysql.cj.protocol.Resultset;
 
 public class DB {
    
@@ -28,6 +31,16 @@ public class DB {
 	   try {
 		conn.close();
 		pstmt.close();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+   }
+   public static void close(Connection conn,PreparedStatement pstmt, ResultSet rs) {
+	   try {
+		conn.close();
+		pstmt.close();
+		rs.close();
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

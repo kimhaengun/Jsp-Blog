@@ -8,3 +8,4 @@
 1월 04, 2021 10:33:31.233 NEW SESSION
 1월 04, 2021 10:33:31.233 [9320:9796:0104/103331.232:ERROR:device_event_log_impl.cc(211)] [10:33:31.233] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
 1월 04, 2021 10:43:27.697 [0104/104327.695:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 04, 2021 17:51:56.369 [9320:9796:0104/175156.369:ERROR:device_event_log_impl.cc(211)] [17:51:56.369] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)

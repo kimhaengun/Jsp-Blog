@@ -25,7 +25,8 @@ public class UserService {
 		return -1; //update해주기 때문에 int
 	} 
 	
-	public int 아이디중복체크(String username) { //username만 체크해주면됨
-		return -1;
+	public int 유저네임중복체크(String username) { //username만 체크해주면됨
+		int result = userDao.findByUsername(username);
+		return result;
 	}
 }
