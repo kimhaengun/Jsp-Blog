@@ -1,8 +1,0 @@
-127.0.0.1 - - [31/Dec/2020:17:23:05 +0900] "GET / HTTP/1.1" 404 807
-0:0:0:0:0:0:0:1 - - [31/Dec/2020:17:23:05 +0900] "GET /blog/WEB-INF/classes/com/cos/blog/config/DB.java HTTP/1.1" 404 721
-127.0.0.1 - - [31/Dec/2020:17:23:39 +0900] "GET / HTTP/1.1" 200 150
-0:0:0:0:0:0:0:1 - - [31/Dec/2020:17:24:07 +0900] "GET /WEB-INF/classes/com/cos/blog/config/DB.java HTTP/1.1" 404 721
-127.0.0.1 - - [31/Dec/2020:17:26:13 +0900] "GET / HTTP/1.1" 200 150
-0:0:0:0:0:0:0:1 - - [31/Dec/2020:17:26:14 +0900] "GET /WEB-INF/classes/com/cos/blog/config/DB.java HTTP/1.1" 404 721
-127.0.0.1 - - [31/Dec/2020:17:27:35 +0900] "GET / HTTP/1.1" 200 150
-0:0:0:0:0:0:0:1 - - [31/Dec/2020:17:27:36 +0900] "GET /META-INF/context.xml HTTP/1.1" 404 721

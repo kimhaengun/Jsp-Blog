@@ -28,7 +28,7 @@ public class CharConfig implements Filter{
 //		PrintWriter out = response.getWriter();
 //		out.println("안녕");
 //		out.flush();
-		//		chain.doFilter(request, response);
+		chain.doFilter(request, response);
 		
 	}
 
