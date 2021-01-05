@@ -7,8 +7,41 @@ import java.sql.SQLException;
 
 import com.cos.blog.config.DB;
 import com.cos.blog.domain.user.dto.JoinReqDto;
+import com.cos.blog.domain.user.dto.LoginReqDto;
 
 public class UserDao {
+	public User findByUsernameAndPassword(LoginReqDto dto) {
+		String sql = "SELECT id, username, email, address FROM user WHERE username = ? AND password = ?";
+		//password는 생략해야한다~~
+		Connection conn = DB.getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, dto.getUsername());
+			pstmt.setString(2, dto.getPassword());
+			rs = pstmt.executeQuery();
+			
+			//Persistence API
+			if(rs.next()) {
+				User user = User.builder()
+						.id(rs.getInt("id"))
+						.username(rs.getString("username"))
+						.email(rs.getString("email"))
+						.address(rs.getString("address"))
+						.build();
+				return user;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			DB.close(conn, pstmt, rs);
+		}
+		
+		return null;
+	}
+	
 	public int findByUsername(String username) {
 		String sql = "SELECT * FROM user WHERE username = ?";
 		Connection conn = DB.getConnection();

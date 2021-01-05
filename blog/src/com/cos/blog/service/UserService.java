@@ -18,7 +18,7 @@ public class UserService {
 	}
 	
 	public User 로그인(LoginReqDto dto) {
-		return null; // select이기 때문에 User에서 값 리턴
+		return userDao.findByUsernameAndPassword(dto); // select이기 때문에 User에서 값 리턴
 	}
 	
 	public int 회원수정(UpdateReqDto dto) {
