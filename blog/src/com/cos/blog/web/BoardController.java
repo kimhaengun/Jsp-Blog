@@ -1,6 +1,9 @@
 package com.cos.blog.web;
 
 import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cos.blog.domain.board.Board;
 import com.cos.blog.domain.board.dto.SaveReqDto;
 import com.cos.blog.domain.user.User;
 import com.cos.blog.service.BoardService;
@@ -37,9 +41,11 @@ public class BoardController extends HttpServlet {
 		if(cmd.equals("saveForm")) {
 			User principal = (User) session.getAttribute("principal");
 			if (principal != null) {
-				response.sendRedirect("board/saveForm.jsp");
+				RequestDispatcher dis = request.getRequestDispatcher("board/saveForm.jsp");
+				dis.forward(request, response);
 			}else {
-				response.sendRedirect("user/loginForm.jsp");
+				RequestDispatcher dis = request.getRequestDispatcher("user/loginForm.jsp");
+				dis.forward(request, response);
 			}
 		}else if(cmd.equals("save")) {
 			int userId = Integer.parseInt(request.getParameter("userId"));
@@ -56,7 +62,12 @@ public class BoardController extends HttpServlet {
 			}else {
 				Script.back(response, "글쓰기 실패");
 			}
-		}
+		}else if (cmd.equals("list")) {
+			List<Board> boards = boardService.글목록보기();
+			request.setAttribute("boards", boards);
+			RequestDispatcher dis = request.getRequestDispatcher("board/list.jsp");
+			dis.forward(request, response);
+	}
 	}
 
 }

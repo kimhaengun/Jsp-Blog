@@ -20,12 +20,15 @@
 		<div class="progress-bar" style="width: 70%"></div>
 	</div>
 
+	<!-- JSTL foreach문을 써서 뿌리세요. el표현식과 함께 -->
+	<c:forEach var="board" items="${boards}">
 		<div class="card col-md-12 m-2">
 			<div class="card-body">
-				<h4 class="card-title">제목</h4>
-				<a href="#" class="btn btn-primary">상세보기</a>
+				<h4 class="card-title">${board.title}</h4>
+				<a href="/blog/board?cmd=detail&id=${board.id}" class="btn btn-primary">상세보기</a>
 			</div>
 		</div>
+	</c:forEach>
 
 	<br />
 	<ul class="pagination justify-content-center">
