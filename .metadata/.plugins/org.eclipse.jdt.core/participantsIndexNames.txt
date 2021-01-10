@@ -9,6 +9,8 @@ D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\146711609.index
 \blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\146711609.index
 \blog\src
+D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3143325655.index
+\blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3599632421.index
 \ajax\src
 D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\83170155.index
@@ -18,4 +20,8 @@ C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3744385260.index
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3143325655.index
 \blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2646736626.index
+\blog\src
+D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3358414519.index
+\blog\src
+D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2646736626.index
 \blog\src
