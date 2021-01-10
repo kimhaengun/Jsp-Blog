@@ -6,11 +6,15 @@ import com.cos.blog.domain.board.Board;
 import com.cos.blog.domain.board.BoardDao;
 import com.cos.blog.domain.board.dto.DetailRespDto;
 import com.cos.blog.domain.board.dto.SaveReqDto;
+import com.cos.blog.domain.board.dto.UpdateReqDto;
 
 public class BoardService {
 	private BoardDao boardDao;
 	public BoardService() {
 		boardDao = new BoardDao();
+	}
+	public int 글수정(UpdateReqDto dto) {
+		return boardDao.update(dto);
 	}
 	public int 글삭제(int id) {
 		return boardDao.deleteById(id);
