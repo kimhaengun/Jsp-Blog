@@ -11,6 +11,9 @@ public class BoardService {
 	public BoardService() {
 		boardDao = new BoardDao();
 	}
+	public int 글개수() {
+		return boardDao.count();
+	}
 	public int 글쓰기(SaveReqDto dto) {
 		return boardDao.save(dto);
 	}

@@ -9,6 +9,7 @@ import com.cos.blog.domain.user.dto.UpdateReqDto;
 public class UserService {
 	//회원가입, 로그인, 회원수정, 로그아웃, 아이디중복체크
 	private UserDao userDao;
+	
 	public UserService() {
 		userDao = new UserDao();
 	}

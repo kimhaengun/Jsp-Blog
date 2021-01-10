@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-// http://localhost:8000/blog/user
+// http://localhost:8000/blog/reply
 @WebServlet("/reply")
 public class ReplyController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

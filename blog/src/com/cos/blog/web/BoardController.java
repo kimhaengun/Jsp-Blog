@@ -18,7 +18,7 @@ import com.cos.blog.service.BoardService;
 import com.cos.blog.util.Script;
 
 
-// http://localhost:8000/blog/user
+// http://localhost:8000/blog/board
 @WebServlet("/board")
 public class BoardController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -64,11 +64,24 @@ public class BoardController extends HttpServlet {
 			}
 		}else if (cmd.equals("list")) {
 			int page = Integer.parseInt(request.getParameter("page"));
-			//최초 0 / Next 1 / Next 2
+			//최초 0 / Next 1 / Next 2  //페이지 수
 			List<Board> boards = boardService.글목록보기(page);
 			request.setAttribute("boards", boards);
+			
+			
+			//계산(전체 데이터수랑 한페이지 몇개 - 총 몇페이지 나와야하는지 계산하기)
+			//ex)총 3페이지 일경우 page의 max값은 2 
+			//	page ==2가 되는 순간 isEnd =true
+			int boardCount = boardService.글개수();
+			int lastPage = (boardCount-1)/4; // 2/4 = 0, 3/4 = 0, 4/4 = 1, 9/4 = 2 ( 0page, 1page, 2page) 
+			double currentPosition = (double)page/(lastPage)*100;
+
+			request.setAttribute("lastPage", lastPage);
+			request.setAttribute("currentPosition", currentPosition);
+
 			RequestDispatcher dis = request.getRequestDispatcher("board/list.jsp");
 			dis.forward(request, response);
+			
 	}
 	}
 

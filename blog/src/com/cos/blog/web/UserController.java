@@ -39,6 +39,7 @@ public class UserController extends HttpServlet {
 
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		//http://localhost:8000/blog/user?cmd=~~~
 		String cmd = request.getParameter("cmd");
 
 		UserService userService = new UserService();
@@ -47,13 +48,17 @@ public class UserController extends HttpServlet {
 			// 아이디 기억 해서 넘겨줄 예정
 			RequestDispatcher dis = request.getRequestDispatcher("user/loginForm.jsp");
 			dis.forward(request, response);
-		} else if (cmd.equals("login")) {
+		} else if (cmd.equals("login")) { //데이터를 받아서 복잡한 로직 실행 되는 곳
+			//loginForm에서 받은 username,password 값을 받아와서 파싱
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
+			
+			//LoginReqDto에 파싱한 값 주기
 			LoginReqDto dto = new LoginReqDto();
 			dto.setUsername(username);
 			dto.setPassword(password);
 			User userEntity = userService.로그인(dto);
+			
 			if (userEntity != null) {
 				HttpSession session = request.getSession();
 				session.setAttribute("principal", userEntity);// 인증 구간
@@ -69,6 +74,8 @@ public class UserController extends HttpServlet {
 			String password = request.getParameter("password");
 			String email = request.getParameter("email");
 			String address = request.getParameter("address");
+			
+			//
 			JoinReqDto dto = new JoinReqDto();
 			dto.setUsername(username);
 			dto.setPassword(password);
