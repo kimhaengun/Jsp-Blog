@@ -21,7 +21,7 @@ public class Board {
 	private int readCount; // 조회수 초기 디폴트값 = 0
 	private Timestamp createDate;
 	
-	public String gertTiTle() {
-		return title.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+	public String getTitle() {
+		return title.replaceAll("<", "%lt;").replaceAll(">", "&gt;");
 	}
 }

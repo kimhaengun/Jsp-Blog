@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="progress col-md-12 m-2">
-		<div class="progress-bar" style="width: ${currentPosition}0%"></div>
+		<div class="progress-bar" style="width: ${currentPosition}%"></div>
 	</div>
 
 	<!-- JSTL foreach문을 써서 뿌리세요. el표현식과 함께 -->
@@ -50,10 +50,6 @@
 				<li class="page-item"><a class="page-link" href="/blog/board?cmd=list&page=${param.page+1}">Next</a></li>
 			</c:otherwise>
 		</c:choose>
-
-
-
-
 	</ul>
 </div>
 

@@ -5,6 +5,8 @@ C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3358414519.index
 \blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2894941983.index
 \ajax2\src
+D:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\146711609.index
+\blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\146711609.index
 \blog\src
 C:\mywork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3599632421.index
