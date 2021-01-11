@@ -1354,3 +1354,9 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-11 23:45:08.632
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-11 23:45:08.633
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
