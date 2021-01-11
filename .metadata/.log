@@ -1360,3 +1360,63 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2021-01-11 23:45:08.633
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:49:16.661
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ShIfpsMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:49:16.661
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ShIfpsMS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:49:16.661
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:49:16.661
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ShIfpsMS => OK
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-11 23:49:22.072
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-11 23:49:22.072
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:34.583
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:34.584
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@591ae3dd[org.springframework.tooling.boot.ls:1.23.0.202010230633(id=673)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:34.584
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.310
+!MESSAGE Boot LS startup time from start to initialized: 1725ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.383
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tIVuxPMSisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.384
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.384
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.384
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.384
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.384
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tIVuxPMS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.385
+!MESSAGE classpath=42 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.388
+!MESSAGE buffering callback sts4.classpath.tIVuxPMS blog false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.388
+!MESSAGE executing callback sts4.classpath.tIVuxPMS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-11 23:51:36.415
+!MESSAGE executing callback sts4.classpath.tIVuxPMS SUCCESS [done]
