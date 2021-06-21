@@ -1,5 +1,12 @@
 # JSP 블로그 프로젝트
 
+실행 영상
+
+
+https://user-images.githubusercontent.com/74044234/122753390-2c66df00-d2cd-11eb-8e46-714c01dba7b7.mp4
+
+
+
 ## 환경
 
 - windows10
